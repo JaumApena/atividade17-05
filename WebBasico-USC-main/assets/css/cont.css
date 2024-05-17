@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fdfcfc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000; 
+    height: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+    }
+
+h1 {
+    text-align: center;
+    color: #ff0101;
+}
+
+h2 {
+    color: #ff0000;
+}
+
+p {
+    color: #666;
+}
+
+
+.destacado {
+    color: red; 
+    font-weight: bold;
+}

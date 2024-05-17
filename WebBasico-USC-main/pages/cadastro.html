@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../assets/css/cadastro.css" />
+
+  <title>CADASTRO</title>
+</head>
+
+<body>
+  <div class="header-container">
+    <ul class="menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./cadastro.html">Cadastro</a></li>
+      <li><a href="./cont.html">Portal</a></li>
+
+
+    </ul>
+  </div>
+
+  <script>
+    function togglePassword() {
+      var passwordField = document.getElementById("password");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+      } else {
+        passwordField.type = "password";
+      }
+    }
+  </script>
+
+  <div class="container">
+    <section class="title-form">
+      <h2>Realize aqui o seu cadastro!</h2>
+    </section>
+
+    <form id="form" class="form">
+      <div class="form-content">
+        <label for="username"> Nome </label>
+        <input type="text" id="username" placeholder="Digite aqui seu nome" />
+      </div>
+
+      <div class="form-content">
+        <label for="email"> E-mail </label>
+        <input type="email" id="email" placeholder="Digite aqui seu email" />
+      </div>
+
+      <div class="form-content">
+        <label for="Telefone"> Telefone</label>
+        <input type="number" id="Tf" placeholder="Digite aqui seu número" />
+      </div>
+
+      <div>
+        <h3>CRIE UMA SENHA</h3>
+        <div class="form-content">
+          <label for="password"> Senha </label>
+          <input type="password" id="password" placeholder="********" />
+          <button type="button" onclick="togglePassword()">Mostrar senha</button>
+        </div>
+
+        <h3>Você concorda com os termos e condições?</h3>
+        <div class="form-content">
+          <label for="checkbox"> Marque se concordar </label>
+          <input type="checkbox" id="checkbox" />
+        </div>
+      </div>
+      <button type="submit"> <a href="./cont.html"> ENVIAR!</a>
+    </form>
+  </div>
+
+  <script src="../assets/scripts/script.js"></script>
+</body>
+
+</html>
